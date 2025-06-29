@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil - Transaksi</title>
+    <link rel="stylesheet" href="style-091.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><span>Rental</span>MobilHans</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home-091.html"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="profile-091.html"><i class="fas fa-info-circle"></i> Profile</a></li>
+                    <li><a href="transaksi-091.html" class="active"><i class="fas fa-car"></i> Transaksi</a></li>
+                    <li><a href="login-091.html" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="transaksi">
+            <h2>Daftar Transaksi</h2>
+            <div class="card">
+                <div class="table-responsive">
+                    <table id="transaksi-table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nama Pelanggan</th>
+                                <th>Mobil Disewa</th>
+                                <th>Tanggal Sewa</th>
+                                <th>Tanggal Kembali</th>
+                                <th>Total Harga</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Data transaksi akan dimuat via JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h2>Form Transaksi Baru</h2>
+            <div class="card">
+                <form id="form-transaksi">
+                    <div class="form-group">
+                        <label for="nama">Nama Pelanggan</label>
+                        <input type="text" id="nama" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mobil">Pilih Mobil</label>
+                        <select id="mobil" required>
+                            <option value="">-- Pilih Mobil --</option>
+                            <option value="Toyota Avanza">Toyota Avanza - Rp350.000/hari</option>
+                            <option value="Honda Civic">Honda Civic - Rp500.000/hari</option>
+                            <option value="Toyota Fortuner">Toyota Fortuner - Rp700.000/hari</option>
+                            <option value="Daihatsu Xenia">Daihatsu Xenia - Rp300.000/hari</option>
+                            <option value="McLeren">McLeren - Rp1.000.000/hari</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tgl-sewa">Tanggal Sewa</label>
+                            <input type="date" id="tgl-sewa" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="tgl-kembali">Tanggal Kembali</label>
+                            <input type="date" id="tgl-kembali" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="total-harga">Total Harga</label>
+                        <input type="text" id="total-harga" readonly>
+                    </div>
+                    
+                    <button type="submit" class="btn">Simpan Transaksi</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 RentalMobilHans. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script-091.js"></script>
+</body>
+</html>
